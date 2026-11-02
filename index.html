@@ -4,36 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Saya</title>
+
+    <title>Portfolio | Nama Saya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Portfolio Saya</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">Tentang Saya</a>
-            <a href="#contact">Hubungi</a>
-        </nav>
-    </header>
+<header class="navbar">
+    <a href="#home" class="logo">Azizi Abu Kassaim<span>.</span></a>
 
-    <section id="home">
-        <h2>Hai, Selamat Datang!</h2>
-        <p>Saya sedang belajar membina website.</p>
-        <button onclick="showMessage()">Klik Saya</button>
-    </section>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Ini ialah website portfolio peribadi saya.</p>
-    </section>
+    <nav id="navMenu">
+        <a href="#home">Utama</a>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Kemahiran</a>
+        <a href="#projects">Projek</a>
+        <a href="#contact">Hubungi</a>
+    </nav>
+</header>
 
-    <section id="contact">
-        <h2>Hubungi Saya</h2>
-        <p>Email: emailanda@example.com</p>
-    </section>
+<main>
+ 
+<section class="hero" id="home">
 
-    <script src="script.js"></script>
+    <div class="hero-text">
+        <p class="eyebrow">SELAMAT DATANG KE PORTFOLIO SAYA</p>
+
+        <h1>Mencipta idea,<br>
+            membina <em>masa depan.</em>
+        </h1>
+
+        <p class="description">
+            Hai, saya Muhamad Azizi bin Abu Kassaim
+            Saya seorang guru dan videographer.
+            Saya sentiasa belajar dan meneroka perkara baharu.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn-black">
+                Lihat Projek Saya ↗
+            </a>
+
+            <a href="#about" class="text-link">
+                Kenali Saya
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-photo">
+        <img src="profile.jpg"
+             alt="Gambar profil saya"
+             class="profile-img">
+
+        <div class="photo-label">
+            <span>01 / PROFILE</span>
+            <span>PERSONAL PORTFOLIO</span>
+        </div>
+    </div>
+
+</section>
+
+<div class="marquee">
+    <p>CREATIVITY ✳ TECHNOLOGY ✳ LEARNING ✳ GROWTH ✳</p>
+</div>
+
+<section class="about section" id="about">
+
+    <div class="section-number">01 — TENTANG SAYA</div>
+
+    <div class="about-content">
+        <h2>Setiap perjalanan<br>
+            bermula dengan <em>idea.</em>
+        </h2>
+
+        <div>
+            <p>
+                Saya seorang individu yang berminat dalam
+                dunia teknologi dan kreativiti digital.
+                Saya suka mempelajari kemahiran baharu,
+                mencuba idea dan menghasilkan sesuatu
+                yang mempunyai nilai.
+            </p>
+
+            <p>
+                Kini saya sedang membina kemahiran dalam
+                pembangunan website menggunakan HTML,
+                CSS dan JavaScript.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="skills section" id="skills">
+
+    <div class="section-number">02 — KEMAHIRAN</div>
+
+    <h2>Perkara yang saya <em>pelajari.</em></h2>
+
+    <div class="skills-list">
+        <div class="skill">
+            <span>01</span>
+            <h3>HTML</h3>
+            <p>Struktur laman web</p>
+        </div>
+
+        <div class="skill">
+            <span>02</span>
+            <h3>CSS</h3>
+            <p>Reka bentuk dan susun atur</p>
+        </div>
+
+        <div class="skill">
+            <span>03</span>
+            <h3>JavaScript</h3>
+            <p>Interaksi laman web</p>
+        </div>
+
+        <div class="skill">
+            <span>04</span>
+            <h3>GitHub</h3>
+            <p>Pengurusan projek</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="projects section" id="projects">
+
+    <div class="section-number">03 — HASIL KERJA</div>
+
+    <h2>Projek <em>saya.</em></h2>
+
+    <div class="project-grid">
+
+        <article class="project-card">
+            <span class="project-no">PROJECT 01</span>
+            <h3>Website Pertama</h3>
+            <p>
+                Projek website pertama saya menggunakan
+                HTML dan CSS.
+            </p>
+            <span class="project-tech">HTML / CSS</span>
+        </article>
+
+        <article class="project-card">
+            <span class="project-no">PROJECT 02</span>
+            <h3>Portfolio Peribadi</h3>
+            <p>
+                Website untuk memperkenalkan diri,
+                kemahiran dan hasil kerja saya.
+            </p>
+            <span class="project-tech">HTML / CSS / JS</span>
+        </article>
+
+        <article class="project-card">
+            <span class="project-no">PROJECT 03</span>
+            <h3>Projek Akan Datang</h3>
+            <p>
+                Ruang untuk mempamerkan hasil
+                kerja dan idea seterusnya.
+            </p>
+            <span class="project-tech">COMING SOON</span>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="contact section" id="contact">
+
+    <div class="section-number">04 — HUBUNGI SAYA</div>
+
+    <h2>Mari kita mulakan<br>
+        sesuatu yang <em>hebat.</em>
+    </h2>
+
+    <p>
+        Saya terbuka untuk berkenalan, berkongsi idea
+        dan meneroka peluang baharu.
+    </p>
+
+    <a href="mailto:emailanda@example.com"
+       class="btn-white">
+        Hubungi Saya ↗
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+    <a href="#home" class="logo">NAMA<span>.</span></a>
+    <p>© <span id="year"></span> Nama Saya. Hak cipta terpelihara.</p>
+    <a href="#home" class="back-top">Kembali ke atas ↑</a>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
